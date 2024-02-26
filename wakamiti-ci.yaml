@@ -1,0 +1,209 @@
+wakamiti:
+  resourceTypes:
+    - gherkin
+  tagFilter: 
+  nonRegisteredStepProviders:
+    - es.iti.wakamiti.custom.CustomSteps
+  log:
+    level: debug
+  launcher:
+    modules:
+      - mysql:mysql-connector-java:8.0.28
+      - es.iti.wakamiti:wakamiti-rest:2.0.0
+      - es.iti.wakamiti:wakamiti-db:2.0.0
+      - es.iti.wakamiti:wakamiti-html-report:2.0.0
+      - es.iti.wakamiti:wakamiti-groovy:2.0.0
+      - org.awaitility:awaitility:4.2.0
+      - es.iti.wakamiti:azure-wakamiti-plugin:1.5.0
+  outputFilePath: result/wakamiti.json
+  htmlReport:
+    title: DORA Billing API
+    output: result/DORA Billing API.html
+
+  idTagPattern: ID-.*
+  strictTestCaseID: true
+  outputFilePerTestCase: false
+  outputFilePerTestCasePath: result/multipleJsons/%DATE%%TIME%
+  #includeFilteredTestCases: true
+
+  rest:
+    baseURL: ${rest}
+    oauth2:
+      url: ${oauth2}
+      clientId: ${clientId}
+        # dora_operations_api
+      clientSecret: ${clientSecret}
+        # para DEV: clientSecret:/wu9J6uJpM8LufEQMSqtp4xFEulBun/sjIkQzzYPvZk=
+        # para QA 7b3b3e37-9f90-73b2-3585-580e939e7c71
+        # para PRE: clientSecret:dE87s9Z5tT0EDvAjmgT3j7bBq4fdgQmb+1d/P4uRSPw=
+      parameters:
+        #scope: "openid profile dora_api dora_entities_api tiba-user-management"
+        scope: openid profile dora_api dora_entities_api tiba-user-management purchase_and_quote_api tiba_md_api
+    httpCodeThreshold: 999    #código de error que devuelve si no hay conexión
+  database:
+    connection:
+      url: ${database}
+      username: ${databaseUser}
+      password: ${databasePass}
+    enableCleanupUponCompletion: "false"
+
+  azure:
+    disable: true
+    host: dev.azure.com
+    # attachments:
+    #   - 'result/report-petclinic.html'
+    organization: tibagroup
+    project: "DORA"
+    tag: AzureExecution
+    createItemsIfAbsent: true
+    timezoneAdjustment: -2
+    workItemTestCaseType: "Test Case"
+    credentials:
+      password: s535rxn6susknc43ibhzq5kaog5x7mno72ek45hbirdymnd472ra
+
+  username: testspc@iti.es
+  password: Qazwer.11
+
+  endpoints: 
+    billing:
+      1-get_searchOperationInvoices:
+        endpoint: /api/billing/search-operation-invoices?Search=&SortBy=&IsSortAscending=true&api-version=
+        endpoint-non-existent: /api/billing/search-operation-invoices-non-exist?Search=&SortBy=&IsSortAscending=true&api-version=
+        operationNro: 'OP00124829'
+      2-get_checkInvoiceValidationEnable: 
+        endpoint: /api/billing/check-invoice-validation-enable
+        endpoint-non-existent: /api/billingNotExist/check-invoice-validation-enable
+    
+    billingStatus:
+      1-get_status:
+        endpoint: /api/operation/{operationId}/billing/status
+        endpoint-non-existent: /api/operationNonExistent/{operationId}/billing/status
+        param: operationId
+        value: 99999
+        value-negative: -99999
+        value-incorrect: abcd
+      2-post_status:
+        endpoint: /api/operation/{operationId}/billing/status/{status}
+        endpoint-non-existent: /api/operationNonExistent/{operationId}/billing/status/{status}
+        param-operationId: operationId
+        param-status: status
+        value-param-operationId: 99999
+        value-param-operationId-negative: -99999
+        value-param-operationId-incorrect: abcd 
+        value-param-status-opn: OPN
+        value-param-status-cls: CLS
+        value-param-status-incorrect: TST
+      4-get_billingCanBeClosed:
+        endpoint: /api/v1.1/BillingStatus/operations/{id}/billings/can-billing-be-closed
+        endpoint-non-existent: /api/v1.1/BillingStatus/operations/{id}/billings/can-billing-be-closed-not-exist
+        param: id
+      
+    creditNote:
+      2-post_partialCreditNoteLines:
+        endpoint: api/operation/{operationId}/billing/partial-credit-note-lines
+        endpoint-non-existent: api/operation/{operationId}/billing/partial-credit-note-lines-notExist
+        param: operationId
+        value: 999999
+        value-negative: -999999
+        value-incorrect: abcd
+ 
+  files:
+    billing:
+      1-get_searchOperationInvoices: data/Billing/1 get_searchOperationInvoices/
+    billingStatus:
+      1-get_status: data/BillingStatus/1 get_status/
+      2-post_status: data/BillingStatus/2 post_status/
+      3-get_operationsWithPendingLines: data/BillingStatus/3 get_operationsWithPendingLines
+      4-get_billingCanBeClosed: data/BillingStatus/4 get_billingCanBeClosed
+    creditNote:
+      2-post_partialCreditNoteLines: data/CreditNote/2 post_partialCreditNoteLines/
+    currencyExchange:
+      2-get_customerCurrencyExchange: data/CurrencyExchange/2 get_customerCurrencyExchange/
+      3-post_checkExchange: data/CurrencyExchange/3 post_checkExchange
+      6-get_customerCurrencyExchange_byFileId: data/CurrencyExchange/6 get_customerCurrencyExchange_byFileId
+    notificationCancel:
+      1-put_notificationCancel: data/NotificationCancel/1 put_notificationCancel
+    notificationSri:
+      1-put_notificationSri: data/NotificationSri/1 put_notificationSri
+    notificationSunat: 
+      1-put_notificationSunat: data/NotificationSunat/1 put_notificationSunat
+    pendingLine:
+      1-get_pendingInvoices: data/PendingLine/1 get_pendingInvoices
+      2-get_chargeTaxTypeInvoices: data/PendingLine/2 get_chargeTaxTypeInvoices
+      3-get_chargeTaxTypes: data/PendingLine/3 get_chargeTaxTypes
+      4-get_newInvoiceLineData: data/PendingLine/4 get_newInvoiceLineData
+      5-post_pendingInvoiceLines: data/PendingLine/5 post_pendingInvoiceLines
+      6-get_billingParties: data/PendingLine/6 get_billingParties
+      7-get_creditNoteLines: data/PendingLine/7 get_creditNoteLines
+      8-get_proformaPreview: data/PendingLine/8 get_proformaPreview  
+      9-get_pendingInvoices_byFileId: data/PendingLine/9 get_pendingInvoices_byFileId
+      10-get_validateSerie: data/PendingLine/10 get_validateSerie
+      11-get_invoiceTypes: data/PendingLine/11 get_invoiceTypes
+      12-get_creditNoteLines_byFileId: data/PendingLine/12 get_creditNoteLines_byFileId
+      13-post_pendingInvoiceLines_byFileId: data/PendingLine/13 post_pendingInvoiceLines_byFileId
+      14-get_chargeTaxTypeInvoices_byFileId: data/PendingLine/14 get_chargeTaxTypeInvoices_byFileId
+      15-get_chargeTaxTypes_byFileId: data/PendingLine/15 get_chargeTaxTypes_byFileId
+      16-get_newInvoiceLineData_byFileId: data/PendingLine/16 get_newInvoiceLineData_byFileId
+      17-get_validateSerie_byFileId: data/PendingLine/17 get_validateSerie_byFileId
+      18-get_beforeValidationData_byFileId: data/PendingLine/18 get_beforeValidationData_byFileId
+      19-post_pendingLines_byFileId: data/PendingLine/19 post_pendingLines_byFileId
+      20-post_pendingLines: data/PendingLine/20 post_pendingLines
+      21-get_beforeValidationData: data/PendingLine/21 get_beforeValidationData
+    proforma:
+      1-get_proformaInvoices_byOperationId: data/Proforma/1 get_proformaInvoices_byOperationId
+      2-get_proformaInvoices_byFileId: data/Proforma/2 get_proformaInvoices_byFileId
+      3-post_proformaInvoices_byOperationId: data/Proforma/3 post_proformaInvoices_byOperationId
+      4-post_proformaInvoices_byFileId: data/Proforma/4 post_proformaInvoices_byFileId      
+    invoice:
+      4-get_issuedInvoices: data/Invoice/4 get_issuedInvoices
+      5-get_customerInvoices: data/Invoice/5 get_customerInvoices/
+      6-get_customerInvoicesByFileId: data/Invoice/6 get_customerInvoicesByFileId
+      7-get_issuedInvoicesByFileId: data/Invoice/7 get_issuedInvoicesByFileId
+      10-get_isOcuOperation: data/Invoice/10 get_isOcuOperation
+    taric:
+      1-post_taric: data/Taric/1 post_taric
+    modifiedInvoice:
+      1-post_modified: data/1 ModifiedInvoice
+
+  organization:
+    tibaSpainSAU: 1
+    tibaSlu: 2
+    tibaAlergie: 3
+    tibaPortugalLDA: 4
+    tibaAngola: 5
+    tibaCaboVerde: 6
+    tibaMozambique: 7
+    saludtrade: 8
+    tibaMexico: 9
+    tibaPanama: 10
+    tibaChile: 11
+    tibaArgentina: 12
+    tibaSaoTomeEPrincipe: 13
+    tibaGuatemala: 14
+    tibaElSalvador: 15
+    tibaHongKongLimited: 16
+    tibaChinaShangaiShenzhenBranch: 17
+    tibaChinaShangai: 18
+    wclShippingPanamaSA: 19
+    tibaColonPanama: 20
+    tibaLogisticsSpain: 21
+    betalinkUsaLlc: 22
+    tibaPeru: 23
+    tibaEcuador: 24
+    usaCargo: 25
+    tibaDominicanaSRL: 34
+    bemelLogisticsLLC: 35
+    tibaUruguay: 36
+    inexistente: 0
+    negative: -99
+    incorrect: abcd
+
+  headers:
+    conType: Content-type
+    appJson: application/json
+    textPlain: text/plain
+    org: organization
+    timezone: Timezone
+    timezone-value: Europe/Madrid
+
+  

@@ -1,0 +1,52 @@
+wakamiti:
+  resourceTypes:
+    - gherkin
+  tagFilter:  
+  nonRegisteredStepProviders:
+    - es.iti.wakamiti.custom.CustomSteps
+  log:
+    level: debug
+  launcher:
+    modules:
+      - mysql:mysql-connector-java:8.0.28
+      - es.iti.wakamiti:wakamiti-rest:2.0.0
+      - es.iti.wakamiti:wakamiti-db:2.0.0
+      - es.iti.wakamiti:wakamiti-html-report:2.0.0
+      - es.iti.wakamiti:wakamiti-groovy:2.0.0
+      - org.awaitility:awaitility:4.2.0
+      - es.iti.wakamiti:azure-wakamiti-plugin:1.5.0
+  outputFilePath: result/wakamiti.json
+  htmlReport:
+    title: DORA Billing API
+    output: result/wakamiti-learning.html
+
+  idTagPattern: ID-.*
+  strictTestCaseID: true
+  outputFilePerTestCase: false
+  outputFilePerTestCasePath: result/multipleJsons/%DATE%%TIME%
+  #includeFilteredTestCases: true
+
+  rest:
+    baseURL: https://dora-qa-apis.tibagroup.com/billing-api
+    oauth2:
+      url: https://qa-identity.tibagroup.com/connect/token
+      clientId: dora                      
+        # dora_operations_api
+      clientSecret: dE87s9Z5tT0EDvAjmgT3j7bBq4fdgQmb+1d/P4uRSPw=
+        # para DEV: clientSecret:/wu9J6uJpM8LufEQMSqtp4xFEulBun/sjIkQzzYPvZk=
+        # para QA 7b3b3e37-9f90-73b2-3585-580e939e7c71
+        # para PRE: clientSecret:dE87s9Z5tT0EDvAjmgT3j7bBq4fdgQmb+1d/P4uRSPw=
+      parameters:
+        #scope: "openid profile dora_api dora_entities_api tiba-user-management"
+        scope: openid profile dora_api dora_entities_api tiba-user-management purchase_and_quote_api tiba_md_api
+    httpCodeThreshold: 999    #código de error que devuelve si no hay conexión
+  database:
+    connection:
+      # url: jdbc:mariadb://dora-qa-bbdd.mariadb.database.azure.com:3306/tiba_dora?useSSL=true
+      url: jdbc:mysql://doraqabbdd.tibagroup.net:3306/tiba_dora?useSSL=true
+      username: quality@dora-qa-bbdd.mariadb.database.azure.com
+      password: T1baQu@lity
+      # driver: com.mysql.jdbc.Driver
+    enableCleanupUponCompletion: "false"
+
+  
