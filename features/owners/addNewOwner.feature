@@ -12,7 +12,7 @@ Característica: PETCLINIC - POST - /petclinic/api/owners
 # Escenarios
 
     @addNewOwner-1 
-    Escenario: Crear un nuevo owner
+    Escenario: Crear un nuevo owner prueba git
 
         # Se define el servicio REST
         Dado el servicio REST '/owners'
