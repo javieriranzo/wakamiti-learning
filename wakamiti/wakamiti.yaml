@@ -1,7 +1,7 @@
 wakamiti:
   resourceTypes:
     - gherkin
-  tagfilter: getAllOwners
+  tagfilter: getOwnerById
   launcher:
     modules:
       - mysql:mysql-connector-java:8.0.28
@@ -10,6 +10,8 @@ wakamiti:
       - es.iti.wakamiti:html-report-wakamiti-plugin:2.3.3
   htmlReport:
     title: Test
+  log:
+    level: debug
   rest:
     baseURL: http://host.docker.internal:9966/petclinic/api
   database:
