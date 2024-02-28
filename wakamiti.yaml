@@ -1,6 +1,7 @@
 wakamiti:
   resourceTypes:
     - gherkin
+  tagfilter: addOwner
   launcher:
     modules:
       - mysql:mysql-connector-java:8.0.28
