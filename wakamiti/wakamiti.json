@@ -1,29 +1,29 @@
 {
-  "executionID" : "3102f08e-8df3-4f00-9cbf-f38f04395152",
-  "snapshotInstant" : "2024-02-28T11:31:28.501411",
+  "executionID" : "4f3162f8-f82f-4de3-b6c8-acd107215d77",
+  "snapshotInstant" : "2024-02-28T12:04:23.096327",
   "nodeType" : "AGGREGATOR",
   "displayName" : "Test Plan",
-  "startInstant" : "2024-02-28T11:31:27.735010",
-  "finishInstant" : "2024-02-28T11:31:28.485647",
-  "duration" : 687,
+  "startInstant" : "2024-02-28T12:04:21.282709",
+  "finishInstant" : "2024-02-28T12:04:23.042254",
+  "duration" : 1568,
   "errorMessage" : "Cannot match step at <[35,9]> 'los siguientes registros existen en la tabla de BBDD:' : Cannot match step with any defined step\nPerhaps you mean one of the following:\n\t----------\n\tlos siguientes parámetros de búsqueda:\n\tlos siguientes parámetros de ruta:\n\tlos siguientes parámetros de solicitud:\n\tlos siguientes parámetros de formulario:\n\tse crea(n) * con los siguientes datos:\n\t",
   "errorTrace" : "es.iti.wakamiti.core.backend.UndefinedStepException: Cannot match step at <[35,9]> 'los siguientes registros existen en la tabla de BBDD:' : Cannot match step with any defined step\nPerhaps you mean one of the following:\n\t----------\n\tlos siguientes parámetros de búsqueda:\n\tlos siguientes parámetros de ruta:\n\tlos siguientes parámetros de solicitud:\n\tlos siguientes parámetros de formulario:\n\tse crea(n) * con los siguientes datos:\n\t\n\tat es.iti.wakamiti.core.backend.RunnableBackend.locateRunnableStep(RunnableBackend.java:272)\n\tat es.iti.wakamiti.core.backend.RunnableBackend.fetchStepBackendData(RunnableBackend.java:180)\n\tat es.iti.wakamiti.core.backend.RunnableBackend.lambda$fetchStepBackendData$1(RunnableBackend.java:167)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)\n\tat java.base/java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)\n\tat java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)\n\tat java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)\n\tat java.base/java.util.stream.ReferencePipeline.forEach(Unknown Source)\n\tat es.iti.wakamiti.core.backend.RunnableBackend.fetchStepBackendData(RunnableBackend.java:165)\n\tat es.iti.wakamiti.core.backend.RunnableBackend.runStep(RunnableBackend.java:81)\n\tat es.iti.wakamiti.core.runner.PlanNodeRunner.lambda$runStep$2(PlanNodeRunner.java:132)\n\tat java.base/java.util.Optional.ifPresent(Unknown Source)\n\tat es.iti.wakamiti.core.runner.PlanNodeRunner.runStep(PlanNodeRunner.java:132)\n\tat es.iti.wakamiti.core.runner.PlanNodeRunner.runNode(PlanNodeRunner.java:114)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)\n\tat java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)\n\tat java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)\n\tat java.base/java.util.stream.ReferencePipeline.reduce(Unknown Source)\n\tat java.base/java.util.stream.ReferencePipeline.max(Unknown Source)\n\tat es.iti.wakamiti.core.runner.PlanNodeRunner.runChildren(PlanNodeRunner.java:126)\n\tat es.iti.wakamiti.core.runner.PlanNodeRunner.runNode(PlanNodeRunner.java:109)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)\n\tat java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)\n\tat java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)\n\tat java.base/java.util.stream.ReferencePipeline.reduce(Unknown Source)\n\tat java.base/java.util.stream.ReferencePipeline.max(Unknown Source)\n\tat es.iti.wakamiti.core.runner.PlanNodeRunner.runChildren(PlanNodeRunner.java:126)\n\tat es.iti.wakamiti.core.runner.PlanNodeRunner.runNode(PlanNodeRunner.java:109)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)\n\tat java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)\n\tat java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)\n\tat java.base/java.util.stream.ReferencePipeline.reduce(Unknown Source)\n\tat java.base/java.util.stream.ReferencePipeline.max(Unknown Source)\n\tat es.iti.wakamiti.core.runner.PlanNodeRunner.runChildren(PlanNodeRunner.java:126)\n\tat es.iti.wakamiti.core.runner.PlanNodeRunner.runNode(PlanNodeRunner.java:109)\n\tat es.iti.wakamiti.core.runner.PlanRunner.run(PlanRunner.java:61)\n\tat es.iti.wakamiti.core.Wakamiti.executePlan(Wakamiti.java:345)\n\tat es.iti.wakamiti.launcher.WakamitiRunner.run(WakamitiRunner.java:53)\n\tat es.iti.wakamiti.launcher.WakamitiLauncher.main(WakamitiLauncher.java:71)\n",
   "result" : "UNDEFINED",
   "testCaseResults" : {
     "UNDEFINED" : 1,
     "NOT_IMPLEMENTED" : 4,
-    "PASSED" : 1
+    "PASSED" : 2
   },
   "childrenResults" : {
     "NOT_IMPLEMENTED" : 4,
-    "PASSED" : 1,
-    "UNDEFINED" : 1
+    "UNDEFINED" : 1,
+    "PASSED" : 1
   },
   "children" : [ {
-    "executionID" : "3102f08e-8df3-4f00-9cbf-f38f04395152",
-    "snapshotInstant" : "2024-02-28T11:31:28.501411",
+    "executionID" : "4f3162f8-f82f-4de3-b6c8-acd107215d77",
+    "snapshotInstant" : "2024-02-28T12:04:23.096327",
     "nodeType" : "AGGREGATOR",
-    "id" : "#m3a8e0",
+    "id" : "#f9d89d",
     "name" : "PETCLINIC - POST - /petclinic/api/owners",
     "keyword" : "Característica",
     "language" : "es",
@@ -35,8 +35,8 @@
       "gherkinType" : "feature",
       "modules" : "database-steps, rest-steps"
     },
-    "startInstant" : "2024-02-28T11:31:27.735010",
-    "finishInstant" : "2024-02-28T11:31:27.743044",
+    "startInstant" : "2024-02-28T12:04:21.282709",
+    "finishInstant" : "2024-02-28T12:04:21.293584",
     "duration" : 0,
     "errorMessage" : "Cannot match step at <[35,9]> 'los siguientes registros existen en la tabla de BBDD:' : Cannot match step with any defined step\nPerhaps you mean one of the following:\n\t----------\n\tlos siguientes parámetros de búsqueda:\n\tlos siguientes parámetros de ruta:\n\tlos siguientes parámetros de solicitud:\n\tlos siguientes parámetros de formulario:\n\tse crea(n) * con los siguientes datos:\n\t",
     "errorTrace" : "es.iti.wakamiti.core.backend.UndefinedStepException: Cannot match step at <[35,9]> 'los siguientes registros existen en la tabla de BBDD:' : Cannot match step with any defined step\nPerhaps you mean one of the following:\n\t----------\n\tlos siguientes parámetros de búsqueda:\n\tlos siguientes parámetros de ruta:\n\tlos siguientes parámetros de solicitud:\n\tlos siguientes parámetros de formulario:\n\tse crea(n) * con los siguientes datos:\n\t\n\tat es.iti.wakamiti.core.backend.RunnableBackend.locateRunnableStep(RunnableBackend.java:272)\n\tat es.iti.wakamiti.core.backend.RunnableBackend.fetchStepBackendData(RunnableBackend.java:180)\n\tat es.iti.wakamiti.core.backend.RunnableBackend.lambda$fetchStepBackendData$1(RunnableBackend.java:167)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)\n\tat java.base/java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)\n\tat java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)\n\tat java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)\n\tat java.base/java.util.stream.ReferencePipeline.forEach(Unknown Source)\n\tat es.iti.wakamiti.core.backend.RunnableBackend.fetchStepBackendData(RunnableBackend.java:165)\n\tat es.iti.wakamiti.core.backend.RunnableBackend.runStep(RunnableBackend.java:81)\n\tat es.iti.wakamiti.core.runner.PlanNodeRunner.lambda$runStep$2(PlanNodeRunner.java:132)\n\tat java.base/java.util.Optional.ifPresent(Unknown Source)\n\tat es.iti.wakamiti.core.runner.PlanNodeRunner.runStep(PlanNodeRunner.java:132)\n\tat es.iti.wakamiti.core.runner.PlanNodeRunner.runNode(PlanNodeRunner.java:114)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)\n\tat java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)\n\tat java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)\n\tat java.base/java.util.stream.ReferencePipeline.reduce(Unknown Source)\n\tat java.base/java.util.stream.ReferencePipeline.max(Unknown Source)\n\tat es.iti.wakamiti.core.runner.PlanNodeRunner.runChildren(PlanNodeRunner.java:126)\n\tat es.iti.wakamiti.core.runner.PlanNodeRunner.runNode(PlanNodeRunner.java:109)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)\n\tat java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)\n\tat java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)\n\tat java.base/java.util.stream.ReferencePipeline.reduce(Unknown Source)\n\tat java.base/java.util.stream.ReferencePipeline.max(Unknown Source)\n\tat es.iti.wakamiti.core.runner.PlanNodeRunner.runChildren(PlanNodeRunner.java:126)\n\tat es.iti.wakamiti.core.runner.PlanNodeRunner.runNode(PlanNodeRunner.java:109)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)\n\tat java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)\n\tat java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)\n\tat java.base/java.util.stream.ReferencePipeline.reduce(Unknown Source)\n\tat java.base/java.util.stream.ReferencePipeline.max(Unknown Source)\n\tat es.iti.wakamiti.core.runner.PlanNodeRunner.runChildren(PlanNodeRunner.java:126)\n\tat es.iti.wakamiti.core.runner.PlanNodeRunner.runNode(PlanNodeRunner.java:109)\n\tat es.iti.wakamiti.core.runner.PlanRunner.run(PlanRunner.java:61)\n\tat es.iti.wakamiti.core.Wakamiti.executePlan(Wakamiti.java:345)\n\tat es.iti.wakamiti.launcher.WakamitiRunner.run(WakamitiRunner.java:53)\n\tat es.iti.wakamiti.launcher.WakamitiLauncher.main(WakamitiLauncher.java:71)\n",
@@ -48,23 +48,23 @@
       "UNDEFINED" : 1
     },
     "children" : [ {
-      "executionID" : "3102f08e-8df3-4f00-9cbf-f38f04395152",
-      "snapshotInstant" : "2024-02-28T11:31:28.501411",
+      "executionID" : "4f3162f8-f82f-4de3-b6c8-acd107215d77",
+      "snapshotInstant" : "2024-02-28T12:04:23.096327",
       "nodeType" : "TEST_CASE",
-      "id" : "#q9d635",
+      "id" : "#b4a73b",
       "name" : "Crear un nuevo owner",
       "keyword" : "Escenario",
       "language" : "es",
       "source" : "[15,5]",
-      "displayName" : "[#q9d635] Escenario: Crear un nuevo owner",
+      "displayName" : "[#b4a73b] Escenario: Crear un nuevo owner",
       "tags" : [ "addNewOwner-1", "addOwner" ],
       "properties" : {
         "gherkinType" : "scenario",
         "featureName" : "PETCLINIC - POST - /petclinic/api/owners",
         "modules" : "database-steps, rest-steps"
       },
-      "startInstant" : "2024-02-28T11:31:27.735010",
-      "finishInstant" : "2024-02-28T11:31:27.743044",
+      "startInstant" : "2024-02-28T12:04:21.282709",
+      "finishInstant" : "2024-02-28T12:04:21.293584",
       "duration" : 0,
       "errorMessage" : "Cannot match step at <[35,9]> 'los siguientes registros existen en la tabla de BBDD:' : Cannot match step with any defined step\nPerhaps you mean one of the following:\n\t----------\n\tlos siguientes parámetros de búsqueda:\n\tlos siguientes parámetros de ruta:\n\tlos siguientes parámetros de solicitud:\n\tlos siguientes parámetros de formulario:\n\tse crea(n) * con los siguientes datos:\n\t",
       "errorTrace" : "es.iti.wakamiti.core.backend.UndefinedStepException: Cannot match step at <[35,9]> 'los siguientes registros existen en la tabla de BBDD:' : Cannot match step with any defined step\nPerhaps you mean one of the following:\n\t----------\n\tlos siguientes parámetros de búsqueda:\n\tlos siguientes parámetros de ruta:\n\tlos siguientes parámetros de solicitud:\n\tlos siguientes parámetros de formulario:\n\tse crea(n) * con los siguientes datos:\n\t\n\tat es.iti.wakamiti.core.backend.RunnableBackend.locateRunnableStep(RunnableBackend.java:272)\n\tat es.iti.wakamiti.core.backend.RunnableBackend.fetchStepBackendData(RunnableBackend.java:180)\n\tat es.iti.wakamiti.core.backend.RunnableBackend.lambda$fetchStepBackendData$1(RunnableBackend.java:167)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)\n\tat java.base/java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)\n\tat java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)\n\tat java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)\n\tat java.base/java.util.stream.ReferencePipeline.forEach(Unknown Source)\n\tat es.iti.wakamiti.core.backend.RunnableBackend.fetchStepBackendData(RunnableBackend.java:165)\n\tat es.iti.wakamiti.core.backend.RunnableBackend.runStep(RunnableBackend.java:81)\n\tat es.iti.wakamiti.core.runner.PlanNodeRunner.lambda$runStep$2(PlanNodeRunner.java:132)\n\tat java.base/java.util.Optional.ifPresent(Unknown Source)\n\tat es.iti.wakamiti.core.runner.PlanNodeRunner.runStep(PlanNodeRunner.java:132)\n\tat es.iti.wakamiti.core.runner.PlanNodeRunner.runNode(PlanNodeRunner.java:114)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)\n\tat java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)\n\tat java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)\n\tat java.base/java.util.stream.ReferencePipeline.reduce(Unknown Source)\n\tat java.base/java.util.stream.ReferencePipeline.max(Unknown Source)\n\tat es.iti.wakamiti.core.runner.PlanNodeRunner.runChildren(PlanNodeRunner.java:126)\n\tat es.iti.wakamiti.core.runner.PlanNodeRunner.runNode(PlanNodeRunner.java:109)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)\n\tat java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)\n\tat java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)\n\tat java.base/java.util.stream.ReferencePipeline.reduce(Unknown Source)\n\tat java.base/java.util.stream.ReferencePipeline.max(Unknown Source)\n\tat es.iti.wakamiti.core.runner.PlanNodeRunner.runChildren(PlanNodeRunner.java:126)\n\tat es.iti.wakamiti.core.runner.PlanNodeRunner.runNode(PlanNodeRunner.java:109)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)\n\tat java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)\n\tat java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)\n\tat java.base/java.util.stream.ReferencePipeline.reduce(Unknown Source)\n\tat java.base/java.util.stream.ReferencePipeline.max(Unknown Source)\n\tat es.iti.wakamiti.core.runner.PlanNodeRunner.runChildren(PlanNodeRunner.java:126)\n\tat es.iti.wakamiti.core.runner.PlanNodeRunner.runNode(PlanNodeRunner.java:109)\n\tat es.iti.wakamiti.core.runner.PlanRunner.run(PlanRunner.java:61)\n\tat es.iti.wakamiti.core.Wakamiti.executePlan(Wakamiti.java:345)\n\tat es.iti.wakamiti.launcher.WakamitiRunner.run(WakamitiRunner.java:53)\n\tat es.iti.wakamiti.launcher.WakamitiLauncher.main(WakamitiLauncher.java:71)\n",
@@ -73,12 +73,12 @@
         "UNDEFINED" : 1
       },
       "childrenResults" : {
-        "SKIPPED" : 5,
-        "UNDEFINED" : 2
+        "UNDEFINED" : 2,
+        "SKIPPED" : 5
       },
       "children" : [ {
-        "executionID" : "3102f08e-8df3-4f00-9cbf-f38f04395152",
-        "snapshotInstant" : "2024-02-28T11:31:28.501411",
+        "executionID" : "4f3162f8-f82f-4de3-b6c8-acd107215d77",
+        "snapshotInstant" : "2024-02-28T12:04:23.096327",
         "nodeType" : "STEP_AGGREGATOR",
         "keyword" : "Antecedentes",
         "displayName" : "Antecedentes: ",
@@ -87,16 +87,16 @@
           "gherkinType" : "background",
           "modules" : "database-steps, rest-steps"
         },
-        "startInstant" : "2024-02-28T11:31:27.735010",
-        "finishInstant" : "2024-02-28T11:31:27.735010",
+        "startInstant" : "2024-02-28T12:04:21.282709",
+        "finishInstant" : "2024-02-28T12:04:21.282709",
         "duration" : 0,
         "result" : "SKIPPED",
         "childrenResults" : {
           "SKIPPED" : 1
         },
         "children" : [ {
-          "executionID" : "3102f08e-8df3-4f00-9cbf-f38f04395152",
-          "snapshotInstant" : "2024-02-28T11:31:28.501411",
+          "executionID" : "4f3162f8-f82f-4de3-b6c8-acd107215d77",
+          "snapshotInstant" : "2024-02-28T12:04:23.096327",
           "nodeType" : "STEP",
           "name" : "el servicio REST '/owners'",
           "keyword" : "Dado",
@@ -107,14 +107,14 @@
             "gherkinType" : "step",
             "modules" : "database-steps, rest-steps"
           },
-          "startInstant" : "2024-02-28T11:31:27.735010",
-          "finishInstant" : "2024-02-28T11:31:27.735010",
+          "startInstant" : "2024-02-28T12:04:21.282709",
+          "finishInstant" : "2024-02-28T12:04:21.282709",
           "duration" : 0,
           "result" : "SKIPPED"
         } ]
       }, {
-        "executionID" : "3102f08e-8df3-4f00-9cbf-f38f04395152",
-        "snapshotInstant" : "2024-02-28T11:31:28.501411",
+        "executionID" : "4f3162f8-f82f-4de3-b6c8-acd107215d77",
+        "snapshotInstant" : "2024-02-28T12:04:23.096327",
         "nodeType" : "STEP",
         "name" : "el servicio REST '/owners'",
         "keyword" : "Dado",
@@ -125,13 +125,13 @@
           "gherkinType" : "step",
           "modules" : "database-steps, rest-steps"
         },
-        "startInstant" : "2024-02-28T11:31:27.738013",
-        "finishInstant" : "2024-02-28T11:31:27.738013",
+        "startInstant" : "2024-02-28T12:04:21.285707",
+        "finishInstant" : "2024-02-28T12:04:21.285707",
         "duration" : 0,
         "result" : "SKIPPED"
       }, {
-        "executionID" : "3102f08e-8df3-4f00-9cbf-f38f04395152",
-        "snapshotInstant" : "2024-02-28T11:31:28.501411",
+        "executionID" : "4f3162f8-f82f-4de3-b6c8-acd107215d77",
+        "snapshotInstant" : "2024-02-28T12:04:23.096327",
         "nodeType" : "STEP",
         "name" : "se crea un owner con los siguientes datos:",
         "keyword" : "Cuando",
@@ -142,14 +142,14 @@
           "gherkinType" : "step",
           "modules" : "database-steps, rest-steps"
         },
-        "startInstant" : "2024-02-28T11:31:27.738450",
-        "finishInstant" : "2024-02-28T11:31:27.738450",
+        "startInstant" : "2024-02-28T12:04:21.286252",
+        "finishInstant" : "2024-02-28T12:04:21.286252",
         "duration" : 0,
         "document" : "{\n    \"address\": \"Test Street 27\",\n    \"city\": \"TestCity\",\n    \"firstName\": \"TestName\",\n    \"id\": 99,\n    \"lastName\": \"TestLastName\",\n    \"pets\": [],\n    \"telephone\": \"666333999\"\n}",
         "result" : "SKIPPED"
       }, {
-        "executionID" : "3102f08e-8df3-4f00-9cbf-f38f04395152",
-        "snapshotInstant" : "2024-02-28T11:31:28.501411",
+        "executionID" : "4f3162f8-f82f-4de3-b6c8-acd107215d77",
+        "snapshotInstant" : "2024-02-28T12:04:23.096327",
         "nodeType" : "STEP",
         "name" : "el código de respuesta HTTP es 200",
         "keyword" : "Entonces",
@@ -160,13 +160,13 @@
           "gherkinType" : "step",
           "modules" : "database-steps, rest-steps"
         },
-        "startInstant" : "2024-02-28T11:31:27.738837",
-        "finishInstant" : "2024-02-28T11:31:27.738837",
+        "startInstant" : "2024-02-28T12:04:21.286747",
+        "finishInstant" : "2024-02-28T12:04:21.286747",
         "duration" : 0,
         "result" : "SKIPPED"
       }, {
-        "executionID" : "3102f08e-8df3-4f00-9cbf-f38f04395152",
-        "snapshotInstant" : "2024-02-28T11:31:28.501411",
+        "executionID" : "4f3162f8-f82f-4de3-b6c8-acd107215d77",
+        "snapshotInstant" : "2024-02-28T12:04:23.096327",
         "nodeType" : "STEP",
         "name" : "los siguientes registros existen en la tabla de BBDD:",
         "keyword" : "Y",
@@ -177,16 +177,16 @@
           "gherkinType" : "step",
           "modules" : "database-steps, rest-steps"
         },
-        "startInstant" : "2024-02-28T11:31:27.739315",
-        "finishInstant" : "2024-02-28T11:31:27.739315",
+        "startInstant" : "2024-02-28T12:04:21.287521",
+        "finishInstant" : "2024-02-28T12:04:21.287521",
         "duration" : 0,
         "dataTable" : [ [ "first_name", "last_name", "address", "city", "telephone" ], [ "TestName", "TestLastName", "Test Street 27", "TestCity", "666333999" ] ],
         "errorMessage" : "Cannot match step at <[35,9]> 'los siguientes registros existen en la tabla de BBDD:' : Cannot match step with any defined step\nPerhaps you mean one of the following:\n\t----------\n\tlos siguientes parámetros de búsqueda:\n\tlos siguientes parámetros de ruta:\n\tlos siguientes parámetros de solicitud:\n\tlos siguientes parámetros de formulario:\n\tse crea(n) * con los siguientes datos:\n\t",
         "errorTrace" : "es.iti.wakamiti.core.backend.UndefinedStepException: Cannot match step at <[35,9]> 'los siguientes registros existen en la tabla de BBDD:' : Cannot match step with any defined step\nPerhaps you mean one of the following:\n\t----------\n\tlos siguientes parámetros de búsqueda:\n\tlos siguientes parámetros de ruta:\n\tlos siguientes parámetros de solicitud:\n\tlos siguientes parámetros de formulario:\n\tse crea(n) * con los siguientes datos:\n\t\n\tat es.iti.wakamiti.core.backend.RunnableBackend.locateRunnableStep(RunnableBackend.java:272)\n\tat es.iti.wakamiti.core.backend.RunnableBackend.fetchStepBackendData(RunnableBackend.java:180)\n\tat es.iti.wakamiti.core.backend.RunnableBackend.lambda$fetchStepBackendData$1(RunnableBackend.java:167)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)\n\tat java.base/java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)\n\tat java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)\n\tat java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)\n\tat java.base/java.util.stream.ReferencePipeline.forEach(Unknown Source)\n\tat es.iti.wakamiti.core.backend.RunnableBackend.fetchStepBackendData(RunnableBackend.java:165)\n\tat es.iti.wakamiti.core.backend.RunnableBackend.runStep(RunnableBackend.java:81)\n\tat es.iti.wakamiti.core.runner.PlanNodeRunner.lambda$runStep$2(PlanNodeRunner.java:132)\n\tat java.base/java.util.Optional.ifPresent(Unknown Source)\n\tat es.iti.wakamiti.core.runner.PlanNodeRunner.runStep(PlanNodeRunner.java:132)\n\tat es.iti.wakamiti.core.runner.PlanNodeRunner.runNode(PlanNodeRunner.java:114)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)\n\tat java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)\n\tat java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)\n\tat java.base/java.util.stream.ReferencePipeline.reduce(Unknown Source)\n\tat java.base/java.util.stream.ReferencePipeline.max(Unknown Source)\n\tat es.iti.wakamiti.core.runner.PlanNodeRunner.runChildren(PlanNodeRunner.java:126)\n\tat es.iti.wakamiti.core.runner.PlanNodeRunner.runNode(PlanNodeRunner.java:109)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)\n\tat java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)\n\tat java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)\n\tat java.base/java.util.stream.ReferencePipeline.reduce(Unknown Source)\n\tat java.base/java.util.stream.ReferencePipeline.max(Unknown Source)\n\tat es.iti.wakamiti.core.runner.PlanNodeRunner.runChildren(PlanNodeRunner.java:126)\n\tat es.iti.wakamiti.core.runner.PlanNodeRunner.runNode(PlanNodeRunner.java:109)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)\n\tat java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)\n\tat java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)\n\tat java.base/java.util.stream.ReferencePipeline.reduce(Unknown Source)\n\tat java.base/java.util.stream.ReferencePipeline.max(Unknown Source)\n\tat es.iti.wakamiti.core.runner.PlanNodeRunner.runChildren(PlanNodeRunner.java:126)\n\tat es.iti.wakamiti.core.runner.PlanNodeRunner.runNode(PlanNodeRunner.java:109)\n\tat es.iti.wakamiti.core.runner.PlanRunner.run(PlanRunner.java:61)\n\tat es.iti.wakamiti.core.Wakamiti.executePlan(Wakamiti.java:345)\n\tat es.iti.wakamiti.launcher.WakamitiRunner.run(WakamitiRunner.java:53)\n\tat es.iti.wakamiti.launcher.WakamitiLauncher.main(WakamitiLauncher.java:71)\n",
         "result" : "UNDEFINED"
       }, {
-        "executionID" : "3102f08e-8df3-4f00-9cbf-f38f04395152",
-        "snapshotInstant" : "2024-02-28T11:31:28.501411",
+        "executionID" : "4f3162f8-f82f-4de3-b6c8-acd107215d77",
+        "snapshotInstant" : "2024-02-28T12:04:23.096327",
         "nodeType" : "STEP",
         "name" : "se ejecuta el siguiente script SQL:",
         "keyword" : "Y",
@@ -197,14 +197,14 @@
           "gherkinType" : "step",
           "modules" : "database-steps, rest-steps"
         },
-        "startInstant" : "2024-02-28T11:31:27.742578",
-        "finishInstant" : "2024-02-28T11:31:27.742578",
+        "startInstant" : "2024-02-28T12:04:21.292786",
+        "finishInstant" : "2024-02-28T12:04:21.292786",
         "duration" : 0,
         "document" : "DELETE FROM owners WHERE firts_name = \"TestName\"; ",
         "result" : "SKIPPED"
       }, {
-        "executionID" : "3102f08e-8df3-4f00-9cbf-f38f04395152",
-        "snapshotInstant" : "2024-02-28T11:31:28.501411",
+        "executionID" : "4f3162f8-f82f-4de3-b6c8-acd107215d77",
+        "snapshotInstant" : "2024-02-28T12:04:23.096327",
         "nodeType" : "STEP",
         "name" : "el siguiente registro no existe en la tabla de BBDD:",
         "keyword" : "Y",
@@ -215,8 +215,8 @@
           "gherkinType" : "step",
           "modules" : "database-steps, rest-steps"
         },
-        "startInstant" : "2024-02-28T11:31:27.743044",
-        "finishInstant" : "2024-02-28T11:31:27.743044",
+        "startInstant" : "2024-02-28T12:04:21.293584",
+        "finishInstant" : "2024-02-28T12:04:21.293584",
         "duration" : 0,
         "dataTable" : [ [ "first_name", "last_name", "address", "city", "telephone" ], [ "TestName", "TestLastName", "Test Street 27", "TestCity", "666333999" ] ],
         "errorMessage" : "Cannot match step at <[44,9]> 'el siguiente registro no existe en la tabla de BBDD:' : Cannot match step with any defined step\nPerhaps you mean one of the following:\n\t----------\n\tlos siguientes parámetros de búsqueda:\n\tlos siguientes parámetros de ruta:\n\tse crea(n) * con los siguientes datos:\n\tlos siguientes parámetros de solicitud:\n\tse limpia la tabla de BBDD {word}\n\t",
@@ -225,10 +225,10 @@
       } ]
     } ]
   }, {
-    "executionID" : "3102f08e-8df3-4f00-9cbf-f38f04395152",
-    "snapshotInstant" : "2024-02-28T11:31:28.501411",
+    "executionID" : "4f3162f8-f82f-4de3-b6c8-acd107215d77",
+    "snapshotInstant" : "2024-02-28T12:04:23.096327",
     "nodeType" : "AGGREGATOR",
-    "id" : "#i2c450",
+    "id" : "#yc80d9",
     "name" : "PETCLINIC - DELETE - /petclinic/api/owners",
     "keyword" : "Característica",
     "language" : "es",
@@ -239,8 +239,8 @@
       "gherkinType" : "feature",
       "modules" : "database-steps, rest-steps"
     },
-    "startInstant" : "2024-02-28T11:31:27.746914",
-    "finishInstant" : "2024-02-28T11:31:27.746914",
+    "startInstant" : "2024-02-28T12:04:21.303496",
+    "finishInstant" : "2024-02-28T12:04:21.303496",
     "duration" : 0,
     "result" : "NOT_IMPLEMENTED",
     "testCaseResults" : {
@@ -250,70 +250,71 @@
       "NOT_IMPLEMENTED" : 1
     },
     "children" : [ {
-      "executionID" : "3102f08e-8df3-4f00-9cbf-f38f04395152",
-      "snapshotInstant" : "2024-02-28T11:31:28.501411",
+      "executionID" : "4f3162f8-f82f-4de3-b6c8-acd107215d77",
+      "snapshotInstant" : "2024-02-28T12:04:23.096327",
       "nodeType" : "TEST_CASE",
-      "id" : "#p96490",
+      "id" : "#t6bd9d",
       "name" : "Eliminar owner por id",
       "keyword" : "Escenario",
       "language" : "es",
       "source" : "[12,5]",
-      "displayName" : "[#p96490] Escenario: Eliminar owner por id",
+      "displayName" : "[#t6bd9d] Escenario: Eliminar owner por id",
       "tags" : [ "deleteOwnerById-1" ],
       "properties" : {
         "gherkinType" : "scenario",
         "featureName" : "PETCLINIC - DELETE - /petclinic/api/owners",
         "modules" : "database-steps, rest-steps"
       },
-      "startInstant" : "2024-02-28T11:31:27.746914",
-      "finishInstant" : "2024-02-28T11:31:27.746914",
+      "startInstant" : "2024-02-28T12:04:21.303496",
+      "finishInstant" : "2024-02-28T12:04:21.303496",
       "duration" : 0,
       "result" : "NOT_IMPLEMENTED"
     } ]
   }, {
-    "executionID" : "3102f08e-8df3-4f00-9cbf-f38f04395152",
-    "snapshotInstant" : "2024-02-28T11:31:28.501411",
+    "executionID" : "4f3162f8-f82f-4de3-b6c8-acd107215d77",
+    "snapshotInstant" : "2024-02-28T12:04:23.096327",
     "nodeType" : "AGGREGATOR",
-    "id" : "#jb6c32",
+    "id" : "#xd30bb",
     "name" : "PETCLINIC - GET - /petclinic/api/owners",
     "keyword" : "Característica",
     "language" : "es",
     "source" : "[4,1]",
     "displayName" : "Característica: PETCLINIC - GET - /petclinic/api/owners",
     "description" : [ "Como: Usuario registrado", "Quiero: Recuperar la lista completa de owners", "Para: Consultar su información" ],
+    "tags" : [ "getAllOwners" ],
     "properties" : {
       "gherkinType" : "feature",
       "modules" : "database-steps, rest-steps"
     },
-    "startInstant" : "2024-02-28T11:31:27.791897",
-    "finishInstant" : "2024-02-28T11:31:28.483659",
-    "duration" : 687,
+    "startInstant" : "2024-02-28T12:04:21.384644",
+    "finishInstant" : "2024-02-28T12:04:23.034960",
+    "duration" : 1568,
     "result" : "PASSED",
     "testCaseResults" : {
-      "PASSED" : 1
+      "PASSED" : 2
     },
     "childrenResults" : {
-      "PASSED" : 1
+      "PASSED" : 2
     },
     "children" : [ {
-      "executionID" : "3102f08e-8df3-4f00-9cbf-f38f04395152",
-      "snapshotInstant" : "2024-02-28T11:31:28.501411",
+      "executionID" : "4f3162f8-f82f-4de3-b6c8-acd107215d77",
+      "snapshotInstant" : "2024-02-28T12:04:23.096327",
       "nodeType" : "TEST_CASE",
-      "id" : "#jaa27b",
+      "id" : "#j2489e",
       "name" : "Recuperar la lista completa de usuarios",
       "keyword" : "Escenario",
       "language" : "es",
       "source" : "[12,5]",
-      "displayName" : "[#jaa27b] Escenario: Recuperar la lista completa de usuarios",
-      "tags" : [ "getAllOwners-1" ],
+      "displayName" : "[#j2489e] Escenario: Recuperar la lista completa de usuarios",
+      "tags" : [ "getAllOwners-1", "getAllOwners" ],
       "properties" : {
         "gherkinType" : "scenario",
         "featureName" : "PETCLINIC - GET - /petclinic/api/owners",
         "modules" : "database-steps, rest-steps"
       },
-      "startInstant" : "2024-02-28T11:31:27.791897",
-      "finishInstant" : "2024-02-28T11:31:28.483659",
-      "duration" : 687,
+      "startInstant" : "2024-02-28T12:04:21.384644",
+      "finishInstant" : "2024-02-28T12:04:22.843074",
+      "duration" : 1454,
       "result" : "PASSED",
       "testCaseResults" : {
         "PASSED" : 1
@@ -322,63 +323,141 @@
         "PASSED" : 3
       },
       "children" : [ {
-        "executionID" : "3102f08e-8df3-4f00-9cbf-f38f04395152",
-        "snapshotInstant" : "2024-02-28T11:31:28.501411",
+        "executionID" : "4f3162f8-f82f-4de3-b6c8-acd107215d77",
+        "snapshotInstant" : "2024-02-28T12:04:23.096327",
         "nodeType" : "STEP",
         "name" : "el servicio REST '/owners'",
         "keyword" : "Dado",
         "language" : "es",
-        "source" : "[15,9]",
+        "source" : "[14,9]",
         "displayName" : "Dado el servicio REST '/owners'",
         "properties" : {
           "gherkinType" : "step",
           "modules" : "database-steps, rest-steps"
         },
-        "startInstant" : "2024-02-28T11:31:27.791897",
-        "finishInstant" : "2024-02-28T11:31:27.794996",
-        "duration" : 3,
+        "startInstant" : "2024-02-28T12:04:21.384644",
+        "finishInstant" : "2024-02-28T12:04:21.390438",
+        "duration" : 5,
         "result" : "PASSED"
       }, {
-        "executionID" : "3102f08e-8df3-4f00-9cbf-f38f04395152",
-        "snapshotInstant" : "2024-02-28T11:31:28.501411",
+        "executionID" : "4f3162f8-f82f-4de3-b6c8-acd107215d77",
+        "snapshotInstant" : "2024-02-28T12:04:23.096327",
         "nodeType" : "STEP",
         "name" : "se realiza la búsqueda de owners",
         "keyword" : "Cuando",
         "language" : "es",
-        "source" : "[17,9]",
+        "source" : "[16,9]",
         "displayName" : "Cuando se realiza la búsqueda de owners",
         "properties" : {
           "gherkinType" : "step",
           "modules" : "database-steps, rest-steps"
         },
-        "startInstant" : "2024-02-28T11:31:27.798834",
-        "finishInstant" : "2024-02-28T11:31:28.479828",
-        "duration" : 680,
+        "startInstant" : "2024-02-28T12:04:21.393698",
+        "finishInstant" : "2024-02-28T12:04:22.834522",
+        "duration" : 1440,
         "result" : "PASSED"
       }, {
-        "executionID" : "3102f08e-8df3-4f00-9cbf-f38f04395152",
-        "snapshotInstant" : "2024-02-28T11:31:28.501411",
+        "executionID" : "4f3162f8-f82f-4de3-b6c8-acd107215d77",
+        "snapshotInstant" : "2024-02-28T12:04:23.096327",
         "nodeType" : "STEP",
         "name" : "el código de respuesta HTTP es 200",
         "keyword" : "Entonces",
         "language" : "es",
-        "source" : "[19,9]",
+        "source" : "[18,9]",
         "displayName" : "Entonces el código de respuesta HTTP es 200",
         "properties" : {
           "gherkinType" : "step",
           "modules" : "database-steps, rest-steps"
         },
-        "startInstant" : "2024-02-28T11:31:28.480658",
-        "finishInstant" : "2024-02-28T11:31:28.483659",
-        "duration" : 3,
+        "startInstant" : "2024-02-28T12:04:22.835586",
+        "finishInstant" : "2024-02-28T12:04:22.843074",
+        "duration" : 7,
+        "result" : "PASSED"
+      } ]
+    }, {
+      "executionID" : "4f3162f8-f82f-4de3-b6c8-acd107215d77",
+      "snapshotInstant" : "2024-02-28T12:04:23.096327",
+      "nodeType" : "TEST_CASE",
+      "id" : "#yd8250",
+      "name" : "Recuperar la lista completa de owners - Fallo 404 por error en la URL",
+      "keyword" : "Escenario",
+      "language" : "es",
+      "source" : "[21,5]",
+      "displayName" : "[#yd8250] Escenario: Recuperar la lista completa de owners - Fallo 404 por error en la URL",
+      "tags" : [ "getAllOwners-2", "getAllOwners" ],
+      "properties" : {
+        "gherkinType" : "scenario",
+        "featureName" : "PETCLINIC - GET - /petclinic/api/owners",
+        "modules" : "database-steps, rest-steps"
+      },
+      "startInstant" : "2024-02-28T12:04:22.918990",
+      "finishInstant" : "2024-02-28T12:04:23.034960",
+      "duration" : 113,
+      "result" : "PASSED",
+      "testCaseResults" : {
+        "PASSED" : 1
+      },
+      "childrenResults" : {
+        "PASSED" : 3
+      },
+      "children" : [ {
+        "executionID" : "4f3162f8-f82f-4de3-b6c8-acd107215d77",
+        "snapshotInstant" : "2024-02-28T12:04:23.096327",
+        "nodeType" : "STEP",
+        "name" : "el servicio REST '/owners-not-exist'",
+        "keyword" : "Dado",
+        "language" : "es",
+        "source" : "[23,9]",
+        "displayName" : "Dado el servicio REST '/owners-not-exist'",
+        "properties" : {
+          "gherkinType" : "step",
+          "modules" : "database-steps, rest-steps"
+        },
+        "startInstant" : "2024-02-28T12:04:22.918990",
+        "finishInstant" : "2024-02-28T12:04:22.919785",
+        "duration" : 0,
+        "result" : "PASSED"
+      }, {
+        "executionID" : "4f3162f8-f82f-4de3-b6c8-acd107215d77",
+        "snapshotInstant" : "2024-02-28T12:04:23.096327",
+        "nodeType" : "STEP",
+        "name" : "se realiza la búsqueda de owners",
+        "keyword" : "Cuando",
+        "language" : "es",
+        "source" : "[25,9]",
+        "displayName" : "Cuando se realiza la búsqueda de owners",
+        "properties" : {
+          "gherkinType" : "step",
+          "modules" : "database-steps, rest-steps"
+        },
+        "startInstant" : "2024-02-28T12:04:22.921015",
+        "finishInstant" : "2024-02-28T12:04:23.027526",
+        "duration" : 106,
+        "result" : "PASSED"
+      }, {
+        "executionID" : "4f3162f8-f82f-4de3-b6c8-acd107215d77",
+        "snapshotInstant" : "2024-02-28T12:04:23.096327",
+        "nodeType" : "STEP",
+        "name" : "el código de respuesta HTTP es 404",
+        "keyword" : "Entonces",
+        "language" : "es",
+        "source" : "[27,9]",
+        "displayName" : "Entonces el código de respuesta HTTP es 404",
+        "properties" : {
+          "gherkinType" : "step",
+          "modules" : "database-steps, rest-steps"
+        },
+        "startInstant" : "2024-02-28T12:04:23.028365",
+        "finishInstant" : "2024-02-28T12:04:23.034960",
+        "duration" : 6,
         "result" : "PASSED"
       } ]
     } ]
   }, {
-    "executionID" : "3102f08e-8df3-4f00-9cbf-f38f04395152",
-    "snapshotInstant" : "2024-02-28T11:31:28.501411",
+    "executionID" : "4f3162f8-f82f-4de3-b6c8-acd107215d77",
+    "snapshotInstant" : "2024-02-28T12:04:23.096327",
     "nodeType" : "AGGREGATOR",
-    "id" : "#ffe6cc",
+    "id" : "#w9761c",
     "name" : "PETCLINIC - GET - /petclinic/api/owners/{id}",
     "keyword" : "Característica",
     "language" : "es",
@@ -389,8 +468,8 @@
       "gherkinType" : "feature",
       "modules" : "database-steps, rest-steps"
     },
-    "startInstant" : "2024-02-28T11:31:28.485150",
-    "finishInstant" : "2024-02-28T11:31:28.485150",
+    "startInstant" : "2024-02-28T12:04:23.040972",
+    "finishInstant" : "2024-02-28T12:04:23.040972",
     "duration" : 0,
     "result" : "NOT_IMPLEMENTED",
     "testCaseResults" : {
@@ -400,31 +479,31 @@
       "NOT_IMPLEMENTED" : 1
     },
     "children" : [ {
-      "executionID" : "3102f08e-8df3-4f00-9cbf-f38f04395152",
-      "snapshotInstant" : "2024-02-28T11:31:28.501411",
+      "executionID" : "4f3162f8-f82f-4de3-b6c8-acd107215d77",
+      "snapshotInstant" : "2024-02-28T12:04:23.096327",
       "nodeType" : "TEST_CASE",
-      "id" : "#i1266a",
+      "id" : "#x4385c",
       "name" : "Recuperar owner por id",
       "keyword" : "Escenario",
       "language" : "es",
       "source" : "[12,5]",
-      "displayName" : "[#i1266a] Escenario: Recuperar owner por id",
+      "displayName" : "[#x4385c] Escenario: Recuperar owner por id",
       "tags" : [ "getOwnerById-1" ],
       "properties" : {
         "gherkinType" : "scenario",
         "featureName" : "PETCLINIC - GET - /petclinic/api/owners/{id}",
         "modules" : "database-steps, rest-steps"
       },
-      "startInstant" : "2024-02-28T11:31:28.485150",
-      "finishInstant" : "2024-02-28T11:31:28.485150",
+      "startInstant" : "2024-02-28T12:04:23.040972",
+      "finishInstant" : "2024-02-28T12:04:23.040972",
       "duration" : 0,
       "result" : "NOT_IMPLEMENTED"
     } ]
   }, {
-    "executionID" : "3102f08e-8df3-4f00-9cbf-f38f04395152",
-    "snapshotInstant" : "2024-02-28T11:31:28.501411",
+    "executionID" : "4f3162f8-f82f-4de3-b6c8-acd107215d77",
+    "snapshotInstant" : "2024-02-28T12:04:23.096327",
     "nodeType" : "AGGREGATOR",
-    "id" : "#nb4ac2",
+    "id" : "#u4944d",
     "name" : "PETCLINIC - GET - api/owners/*/lastname/{lastName}",
     "keyword" : "Característica",
     "language" : "es",
@@ -436,8 +515,8 @@
       "language" : "es",
       "modules" : "database-steps, rest-steps"
     },
-    "startInstant" : "2024-02-28T11:31:28.485441",
-    "finishInstant" : "2024-02-28T11:31:28.485441",
+    "startInstant" : "2024-02-28T12:04:23.041717",
+    "finishInstant" : "2024-02-28T12:04:23.041717",
     "duration" : 0,
     "result" : "NOT_IMPLEMENTED",
     "testCaseResults" : {
@@ -447,15 +526,15 @@
       "NOT_IMPLEMENTED" : 1
     },
     "children" : [ {
-      "executionID" : "3102f08e-8df3-4f00-9cbf-f38f04395152",
-      "snapshotInstant" : "2024-02-28T11:31:28.501411",
+      "executionID" : "4f3162f8-f82f-4de3-b6c8-acd107215d77",
+      "snapshotInstant" : "2024-02-28T12:04:23.096327",
       "nodeType" : "TEST_CASE",
-      "id" : "#df9a8f",
+      "id" : "#ye0ff7",
       "name" : "Recuperar owner por lastName",
       "keyword" : "Escenario",
       "language" : "es",
       "source" : "[15,5]",
-      "displayName" : "[#df9a8f] Escenario: Recuperar owner por lastName",
+      "displayName" : "[#ye0ff7] Escenario: Recuperar owner por lastName",
       "tags" : [ "getOwnerById-1" ],
       "properties" : {
         "gherkinType" : "scenario",
@@ -463,16 +542,16 @@
         "featureName" : "PETCLINIC - GET - api/owners/*/lastname/{lastName}",
         "modules" : "database-steps, rest-steps"
       },
-      "startInstant" : "2024-02-28T11:31:28.485441",
-      "finishInstant" : "2024-02-28T11:31:28.485441",
+      "startInstant" : "2024-02-28T12:04:23.041717",
+      "finishInstant" : "2024-02-28T12:04:23.041717",
       "duration" : 0,
       "result" : "NOT_IMPLEMENTED"
     } ]
   }, {
-    "executionID" : "3102f08e-8df3-4f00-9cbf-f38f04395152",
-    "snapshotInstant" : "2024-02-28T11:31:28.501411",
+    "executionID" : "4f3162f8-f82f-4de3-b6c8-acd107215d77",
+    "snapshotInstant" : "2024-02-28T12:04:23.096327",
     "nodeType" : "AGGREGATOR",
-    "id" : "#n54677",
+    "id" : "#va5201",
     "name" : "PETCLINIC - UPDATE - /petclinic/api/owners",
     "keyword" : "Característica",
     "language" : "es",
@@ -483,8 +562,8 @@
       "gherkinType" : "feature",
       "modules" : "database-steps, rest-steps"
     },
-    "startInstant" : "2024-02-28T11:31:28.485647",
-    "finishInstant" : "2024-02-28T11:31:28.485647",
+    "startInstant" : "2024-02-28T12:04:23.042254",
+    "finishInstant" : "2024-02-28T12:04:23.042254",
     "duration" : 0,
     "result" : "NOT_IMPLEMENTED",
     "testCaseResults" : {
@@ -494,23 +573,23 @@
       "NOT_IMPLEMENTED" : 1
     },
     "children" : [ {
-      "executionID" : "3102f08e-8df3-4f00-9cbf-f38f04395152",
-      "snapshotInstant" : "2024-02-28T11:31:28.501411",
+      "executionID" : "4f3162f8-f82f-4de3-b6c8-acd107215d77",
+      "snapshotInstant" : "2024-02-28T12:04:23.096327",
       "nodeType" : "TEST_CASE",
-      "id" : "#fef68d",
+      "id" : "#b3861a",
       "name" : "Actualizar información de un owner",
       "keyword" : "Escenario",
       "language" : "es",
       "source" : "[12,5]",
-      "displayName" : "[#fef68d] Escenario: Actualizar información de un owner",
+      "displayName" : "[#b3861a] Escenario: Actualizar información de un owner",
       "tags" : [ "updateOwner-1" ],
       "properties" : {
         "gherkinType" : "scenario",
         "featureName" : "PETCLINIC - UPDATE - /petclinic/api/owners",
         "modules" : "database-steps, rest-steps"
       },
-      "startInstant" : "2024-02-28T11:31:28.485647",
-      "finishInstant" : "2024-02-28T11:31:28.485647",
+      "startInstant" : "2024-02-28T12:04:23.042254",
+      "finishInstant" : "2024-02-28T12:04:23.042254",
       "duration" : 0,
       "result" : "NOT_IMPLEMENTED"
     } ]
