@@ -1,0 +1,21 @@
+{
+    "id": 1,
+    "firstName": "George",
+    "lastName": "Franklin",
+    "address": "110 W. Liberty St.",
+    "city": "Madison",
+    "telephone": "6085551023",
+    "pets": [
+      {
+        "id": 1,
+        "name": "Leo",
+        "birthDate": "2000/09/07",
+        "type": {
+          "id": 1,
+          "name": "cat"
+        },
+        "owner": 1,
+        "visits": []
+      }
+    ]
+  }
