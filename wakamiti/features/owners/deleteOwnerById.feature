@@ -1,7 +1,7 @@
 #language: es
 #modules: database-steps, rest-steps
 @deleteOwnerById
-Característica: PETCLINIC - DELETE - /petclinic/api/owners
+Característica: PETCLINIC - BORRAR OWNER POR ID - DELETE - /petclinic/api/owners
     Como: Usuario registrado
     Quiero: Conocer el ID de un owner
     Para: Eliminar el registro

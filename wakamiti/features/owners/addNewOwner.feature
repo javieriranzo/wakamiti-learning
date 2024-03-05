@@ -1,7 +1,7 @@
 #language: es
 #modules: database-steps, rest-steps
 @addOwner
-Característica: PETCLINIC - POST - /petclinic/api/owners
+Característica: PETCLINIC - AÑADIR NUEVO OWNER - POST - /petclinic/api/owners
     Como: Usuario registrado
     Quiero: Completar la información obligatoria del owner 
     Para: Añadir un nuevo registro

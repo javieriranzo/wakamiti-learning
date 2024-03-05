@@ -1,7 +1,7 @@
 #language: es
 #modules: database-steps, rest-steps
 @getOwnerById
-Característica: PETCLINIC - GET - /petclinic/api/owners/{id}
+Característica: PETCLINIC - RECUPERAR OWNER POR ID - GET - /petclinic/api/owners/{id}
     Como: Usuario registrado
     Quiero: Recuperar los datos de un owner identificado por su id
     Para: Consultar su información

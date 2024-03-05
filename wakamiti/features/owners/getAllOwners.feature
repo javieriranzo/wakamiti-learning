@@ -1,7 +1,7 @@
 #language: es
 #modules: database-steps, rest-steps
 @getAllOwners
-Característica: PETCLINIC - GET - /petclinic/api/owners
+Característica: PETCLINIC - RECUPERAR LISTA COMPLETA DE OWNERS - GET - /petclinic/api/owners
     Como: Usuario registrado
     Quiero: Recuperar la lista completa de owners
     Para: Consultar su información
